@@ -1,0 +1,15 @@
+
+    const imgBox = document.getElementById("image");
+    const QRimg = document.getElementById("imageQR");
+    const qrText = document.getElementById("qrtext");
+
+    
+    function generateQR() {
+        if (qrText.value.trim() !== "") {
+            QRimg.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example" + encodeURIComponent(qrText.value);
+            imgBox.classList.add("show-image");
+        } else {
+            // Handle the case when the input is empty (you can display an error message or take other actions)
+            alert("Please enter text or a URL.");
+        }
+    }
