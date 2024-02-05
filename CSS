@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+body{
+    background-color: #262a2f;
+}
+.container{
+    width: 440px;
+    padding: 25px 35px;
+position: absolute;
+top: 23%;
+left: 50%;
+border-radius: 10px;
+background: #fff;
+transform:translate(-50% ) ;
+}
+.container p{
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom:8px;
+}
+.container input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #494eea;
+    outline: 0;
+    border-radius: 5px;
+    margin: 10px 0 20px;
+    padding-left: 6px;
+}
+.container button{
+    width: 100%;
+    height: 50px;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    color: #fff;
+    cursor: pointer;
+    box-shadow:0 10px 10px rgba(0,0,0,0.1 );
+    font-weight: 500;
+    background: #494eea;
+}
+#image {
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out; /* Added timing function for smoother transition */
+}
+
+#image #imageQR {
+    padding: 10px;
+    width: 100%;
+    height: 100%; /* Ensure the image takes up the full height of its container */
+    box-sizing: border-box; /* Include padding in the height calculation */
+}
+
+#image.show-image {
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}
